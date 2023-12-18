@@ -11,13 +11,13 @@ data = df.iloc[:,-3:].values
 print(f"dim = {data.ndim }, shape = {data.shape}, size = {data.size}")
 print(f"Data type = {data.dtype}")
 
-#3- target
-print(data[:,2:])
-print(f"target shape  {data[:,2:].shape}")
-print(data[:,2:].reshape(1*-1))
+# 3- target
+print(data[:,2])
+print(f"target shape  {data[:,2].shape}")
+print(data[:,2].reshape(1*-1))
 
-#4- target 3 observation
-print(data[:,2::3])
+#4- data 3 observation
+print(data[::3,:])
 
 #5- concatination first and last col
 firstFeature = data[:,0:1]
